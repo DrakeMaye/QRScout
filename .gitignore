@@ -28,3 +28,8 @@ dist-ssr
 .env
 .env.*
 !.env.example
+config/2026/config copy.json
+config/2026/config copy 2.json
+.devcontainer/devcontainer.json.old
+package-lock.json
+package-lock.json
