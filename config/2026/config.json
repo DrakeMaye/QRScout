@@ -245,7 +245,7 @@
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 5
+          "step": 1
         },
         {
           "title": "+10 Fuel Burst",
@@ -255,7 +255,7 @@
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 10
+          "step": 1
         },
         {
           "title": "+25 Fuel Dump",
@@ -265,7 +265,7 @@
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 25
+          "step": 1
         },
         {
           "title": "+35 Fuel Dump",
@@ -275,7 +275,7 @@
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 35
+          "step": 1
         },
         {
           "title": "Pickup Effectiveness",
