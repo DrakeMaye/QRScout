@@ -228,7 +228,7 @@
           "step": 20
         },
         {
-          "title": "+1 Fuel Scored (ESTIMATE)",
+          "title": "+1 Fuel Scored",
           "type": "counter",
           "required": false,
           "code": "fuel1",
@@ -238,44 +238,44 @@
           "step": 1
         },
         {
-          "title": "+5 Fuel Burst (ESTIMATE)",
+          "title": "+5 Fuel Burst",
           "type": "counter",
           "required": false,
           "code": "fuel5",
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 1
+          "step": 5
         },
         {
-          "title": "+10 Fuel Burst (ESTIMATE)",
+          "title": "+10 Fuel Burst",
           "type": "counter",
           "required": false,
           "code": "fuel10",
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 1
+          "step": 10
         },
         {
-          "title": "+25 Fuel Dump (ESTIMATE)",
+          "title": "+25 Fuel Dump",
           "type": "counter",
           "required": false,
           "code": "fuel25",
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 1
+          "step": 25
         },
         {
-          "title": "+35 Fuel Dump (ESTIMATE)",
+          "title": "+35 Fuel Dump",
           "type": "counter",
           "required": false,
           "code": "fuel35",
           "formResetBehavior": "reset",
           "defaultValue": 0,
           "min": 0,
-          "step": 1
+          "step": 35
         },
         {
           "title": "Pickup Effectiveness",
