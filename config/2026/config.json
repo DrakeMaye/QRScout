@@ -337,7 +337,7 @@
           "choices": {
             "Yes": "Yes",
             "No": "No",
-            "NA": "Not Applicable"
+            "Attempt": "Attempted"
           }
         },
         {
