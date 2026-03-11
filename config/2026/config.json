@@ -347,7 +347,7 @@
           "choices": {
             "Yes": "Yes",
             "No": "No",
-            "Attempt": "Attempted"
+            "Attempted": "Attempted"
           }
         },
         {
