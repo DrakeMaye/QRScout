@@ -46,10 +46,8 @@ export function App() {
             </form>
           </main>
           <Footer />
-          
         </div>
       </ThemeProvider>
     </StatsigProvider>
   );
 }
-
