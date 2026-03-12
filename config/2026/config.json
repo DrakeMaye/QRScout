@@ -75,6 +75,19 @@
           "defaultValue": ""
         },
         {
+          "title": "Current Round",
+          "description": "Which stage of the competition we are in.",
+          "type": "select",
+          "required": true,
+          "code": "CompType",
+          "formResetBehavior": "reset",
+          "defaultValue": "",
+          "choices": {
+            "QM": "Qualification",
+            "PM": "Playoffs"
+          }
+        },
+        {
           "title": "Match Number",
           "description": "Select the match number.",
           "type": "TBA-match-number",
@@ -87,10 +100,19 @@
           "title": "Team and Robot",
           "description": "Select the team and robot position you are scouting.",
           "type": "TBA-team-and-robot",
-          "required": true,
+          "required": false,
           "code": "teamAndRobot",
           "formResetBehavior": "preserve",
           "defaultValue": null
+        },
+        {
+          "title": "Retype Robot number",
+          "description": "Retype your robot number (make sure to type correctly!)",
+          "type": "text",
+          "required": true,
+          "code": "OfficialNumber",
+          "formResetBehavior": "increment",
+          "defaultValue": ""
         },
         {
           "title": "Starting Position",
@@ -147,6 +169,15 @@
             "Success": "Successful Climb",
             "Failed": "Unsuccessful Climb"
           }
+        },
+        {
+          "title": "Fuel Scored",
+          "description": "Approximate fuel scored during autonomous.",
+          "type": "multi-counter",
+          "required": false,
+          "code": "autoFuelScored",
+          "formResetBehavior": "reset",
+          "defaultValue": 0
         },
         {
           "title": "Where Climbed",
@@ -226,54 +257,13 @@
       "name": "Teleop",
       "fields": [
         {
-          "title": "+1 Fuel Scored (ESTIMATE)",
-          "type": "counter",
+          "title": "Fuel Scored",
+          "description": "Approximate fuel scored during teleop.",
+          "type": "multi-counter",
           "required": false,
-          "code": "fuel1",
+          "code": "teleopFuelScored",
           "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "step": 1
-        },
-        {
-          "title": "+5 Fuel Burst (ESTIMATE)",
-          "type": "counter",
-          "required": false,
-          "code": "fuel5",
-          "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "step": 1
-        },
-        {
-          "title": "+10 Fuel Burst (ESTIMATE)",
-          "type": "counter",
-          "required": false,
-          "code": "fuel10",
-          "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "step": 1
-        },
-        {
-          "title": "+25 Fuel Dump (ESTIMATE)",
-          "type": "counter",
-          "required": false,
-          "code": "fuel25",
-          "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "step": 1
-        },
-        {
-          "title": "+35 Fuel Dump (ESTIMATE)",
-          "type": "counter",
-          "required": false,
-          "code": "fuel35",
-          "formResetBehavior": "reset",
-          "defaultValue": 0,
-          "min": 0,
-          "step": 1
+          "defaultValue": 0
         },
         {
           "title": "% Scoring Effectiveness",
