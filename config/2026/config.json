@@ -97,7 +97,7 @@
           "defaultValue": 1
         },
         {
-          "title": "Team and Robot",
+          "title": "Team and Robot (IGNORE FOR PLAYOFFS)",
           "description": "Select the team and robot position you are scouting.",
           "type": "TBA-team-and-robot",
           "required": false,
