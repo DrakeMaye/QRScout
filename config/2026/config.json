@@ -157,18 +157,13 @@
       "name": "Autonomous",
       "fields": [
         {
-          "title": "Climbed",
-          "description": "Did the robot climb during autonomous?",
-          "type": "select",
-          "required": true,
-          "code": "autoClimbed",
+          "title": "Scored in Auto",
+          "description": "Check if the robot scored in Auto.",
+          "type": "boolean",
+          "required": false,
+          "code": "AutoScored",
           "formResetBehavior": "reset",
-          "defaultValue": "",
-          "choices": {
-            "NA": "Not Attempted",
-            "Success": "Successful Climb",
-            "Failed": "Unsuccessful Climb"
-          }
+          "defaultValue": false
         },
         {
           "title": "Fuel Scored",
@@ -178,39 +173,6 @@
           "code": "autoFuelScored",
           "formResetBehavior": "reset",
           "defaultValue": 0
-        },
-        {
-          "title": "Where Climbed",
-          "description": "Where on the tower did the robot climb in autonomous?",
-          "type": "select",
-          "required": true,
-          "code": "autoClimbPos",
-          "formResetBehavior": "reset",
-          "defaultValue": "",
-          "choices": {
-            "No": "No Climb",
-            "LS": "Left Side",
-            "MD": "Middle",
-            "RS": "Right Side"
-          }
-        },
-        {
-          "title": "Double Climbed in Auto",
-          "description": "Check if the robots Climbed with another robot in Auto.",
-          "type": "boolean",
-          "required": false,
-          "code": "doubleClimb",
-          "formResetBehavior": "reset",
-          "defaultValue": false
-        },
-        {
-          "title": "Scored in Auto",
-          "description": "Check if the robot scored in Auto.",
-          "type": "boolean",
-          "required": false,
-          "code": "AutoScored",
-          "formResetBehavior": "reset",
-          "defaultValue": false
         },
         {
           "title": "Scoring Locations",
@@ -250,6 +212,44 @@
             "H_Player": "Human Player Zone",
             "FLOOR": "Floor"
           }
+        },
+        {
+          "title": "Climbed",
+          "description": "Did the robot climb during autonomous?",
+          "type": "select",
+          "required": true,
+          "code": "autoClimbed",
+          "formResetBehavior": "reset",
+          "defaultValue": "",
+          "choices": {
+            "NA": "Not Attempted",
+            "Success": "Successful Climb",
+            "Failed": "Unsuccessful Climb"
+          }
+        },
+        {
+          "title": "Where Climbed",
+          "description": "Where on the tower did the robot climb in autonomous?",
+          "type": "select",
+          "required": true,
+          "code": "autoClimbPos",
+          "formResetBehavior": "reset",
+          "defaultValue": "",
+          "choices": {
+            "No": "No Climb",
+            "LS": "Left Side",
+            "MD": "Middle",
+            "RS": "Right Side"
+          }
+        },
+        {
+          "title": "Double (Buddy) Climbed in Auto",
+          "description": "Check if the robots Climbed with another robot in Auto.",
+          "type": "boolean",
+          "required": false,
+          "code": "doubleClimb",
+          "formResetBehavior": "reset",
+          "defaultValue": false
         }
       ]
     },
@@ -264,6 +264,22 @@
           "code": "teleopFuelScored",
           "formResetBehavior": "reset",
           "defaultValue": 0
+        },
+        {
+          "title": "Pickup Locations",
+          "description": "Fuel pickup TELEOP",
+          "type": "multi-select",
+          "required": true,
+          "code": "pickupTele",
+          "formResetBehavior": "reset",
+          "defaultValue": [],
+          "choices": {
+            "NONE": "No Pickup",
+            "DEPOT": "Depot",
+            "MID": "MidField",
+            "H_Player": "Human Player Zone",
+            "FLOOR": "Floor"
+          }
         },
         {
           "title": "% Scoring Effectiveness",
