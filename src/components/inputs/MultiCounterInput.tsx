@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { MultiCounterInputData } from './BaseInputProps';
 import { ConfigurableInputProps } from './ConfigurableInput';
 
-const INCREMENTS = [1, 5, 10, 15, 25];
+const INCREMENTS = [1, 5, 15,];
 
 export default function MultiCounterInput(props: ConfigurableInputProps) {
   const data = useQRScoutState(
